@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 470" fill="none">
+  <defs>
+    <linearGradient id="deep" x1="33" y1="438" x2="190" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173f32" stop-opacity=".94"/><stop offset="1" stop-color="#4f956a" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="mid" x1="19" y1="465" x2="173" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20543d" stop-opacity=".93"/><stop offset="1" stop-color="#6ca77a" stop-opacity=".43"/>
+    </linearGradient>
+    <linearGradient id="light" x1="34" y1="459" x2="228" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#285c43" stop-opacity=".86"/><stop offset="1" stop-color="#79ad82" stop-opacity=".38"/>
+    </linearGradient>
+  </defs>
+  <!-- Main curved leaves -->
+  <path d="M17 470C39 412 55 352 63 292c8-61 5-116-19-173-4-9-1-14 8-10 46 22 75 62 84 112 10 54-4 109-29 158-23 43-55 76-90 91Z" fill="url(#deep)"/>
+  <path d="M21 470c42-72 74-148 92-226 19-82 23-157 1-219-3-9 1-13 9-8 47 32 69 82 68 139-2 58-26 117-56 169-34 59-74 110-114 145Z" fill="url(#mid)"/>
+  <path d="M13 470c65-52 117-113 157-181 40-69 68-142 66-209 0-10 5-12 11-5 36 42 47 98 33 155-14 57-50 113-91 161-51 60-109 103-176 127Z" fill="url(#deep)"/>
+  <path d="M5 470c80-39 151-86 211-143 55-53 99-111 119-169 3-9 9-10 13-1 20 48 15 103-12 154-31 58-82 107-139 148-6 4-12 8-18 11Z" fill="url(#light)"/>
+  <path d="M5 470c34-51 59-104 74-160 15-56 21-113 5-159-3-9 1-13 9-9 38 20 61 56 64 101 4 49-13 102-38 149-16 30-36 57-59 78Z" fill="#387451" fill-opacity=".54"/>
+  <path d="M7 470c5-56 2-111-13-164-14-49-37-95-72-122-7-6-5-11 3-13 43-8 83 7 112 40 31 36 46 87 49 139 2 45-5 86-22 120Z" transform="translate(43 0)" fill="#306948" fill-opacity=".58"/>
+  <!-- Stems and delicate veins bring the layered foliage closer to the reference. -->
+  <g stroke="#a4c99e" stroke-linecap="round" stroke-opacity=".34">
+    <path d="M15 466C83 376 122 278 151 153" stroke-width="2.4"/>
+    <path d="M15 466C56 372 74 275 56 119" stroke-width="2.2"/>
+    <path d="M15 466C96 366 164 259 235 80" stroke-width="2.2"/>
+    <path d="M15 466C105 390 205 310 329 192" stroke-width="2.2"/>
+    <path d="M15 466C55 371 82 280 80 170" stroke-width="1.8"/>
+    <path d="M15 466C34 366 12 268-27 201" stroke-width="1.8"/>
+    <path d="M82 333 42 293M92 302 39 262M104 266 45 226M116 228 51 186M126 190 59 150"/>
+    <path d="M99 337 143 300M111 301 162 265M122 263 172 226M133 223 183 186M142 184 195 145M151 147 201 107"/>
+    <path d="M148 300 202 286M171 267 229 247M192 231 250 207M210 194 267 166M225 156 279 126"/>
+    <path d="M176 365 204 320M205 344 239 299M232 321 269 274M259 296 296 248"/>
+    <path d="M60 342 20 321M68 305 18 282M74 268 25 244M77 228 29 204"/>
+  </g>
+</svg>
