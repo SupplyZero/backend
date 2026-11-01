@@ -15,8 +15,6 @@ services:
         value: https://supplyzero.onrender.com
       - key: MQTT_ENABLED
         value: "false"
-      - key: GEMINI_API_KEY
-        sync: false
 
   - type: web
     runtime: static
