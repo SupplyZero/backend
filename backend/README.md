@@ -7,13 +7,13 @@ Async FastAPI backend for cold-chain telemetry, deterministic shelf-life estimat
 Requires Python 3.11+. The default SQLite database is for development; PostgreSQL/TimescaleDB is configured in Compose.
 
 ```powershell
-cd SupplyZero\backend
+cd "$env:USERPROFILE\OneDrive\Documents\backend\backend"
 py -3.11 -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -e ".[dev]"
-Copy-Item .env.example .env
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
 python -m app.seed
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 Interactive API docs: http://localhost:8000/docs. For the full local stack, use `docker compose up --build`; the compose broker is intentionally anonymous and suitable only for local demos. Set broker credentials and TLS for deployment.
@@ -22,20 +22,14 @@ To enable the AI copilot, set `GEMINI_API_KEY` in `backend/.env` and restart the
 
 ### Start backend and dashboard together (Windows)
 
-From PowerShell in the project folder, run this single command:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run-supplyzero.ps1
-```
-
-The launcher creates a local virtual environment and installs missing dependencies on its first run, then opens separate backend and frontend windows. Keep both open. Visit http://127.0.0.1:5173 for the dashboard and http://127.0.0.1:8000/docs for the API. Close both windows to stop the services.
+For the current two-folder setup and one-terminal startup commands, see the repository-level `README.md`.
 
 ## Run the dashboard
 
 Start the API as above, then open a second PowerShell window:
 
 ```powershell
-cd "C:\Users\SUYASH SRIVASTAVA\OneDrive\Documents\SupplyZero\backend"
+cd "$env:USERPROFILE\OneDrive\Documents\backend\frontend"
 npm install
 npm run dev
 ```
