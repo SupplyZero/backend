@@ -8,7 +8,10 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore", env_ignore_empty=True)
 
     database_url: str = "sqlite+aiosqlite:///./supplyzero.db"
-    frontend_origins: str = 'http://localhost:5173,http://127.0.0.1:5173'
+    frontend_origins: str = (
+        'http://localhost:5173,http://127.0.0.1:5173,'
+        'https://backend-blue-iota-33.vercel.app'
+    )
     redis_url: str = "redis://localhost:6379/0"
     mqtt_host: str = "localhost"
     mqtt_port: int = 1883
