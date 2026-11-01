@@ -305,3 +305,9 @@ License details will be added according to the project's distribution and usage 
   <br/>
   💻 <a href="https://github.com/SupplyZero/backend">Explore the GitHub Repository</a>
 </p>
+
+## Deploy publicly on Render
+
+The `render.yaml` Blueprint creates a public API service (`supplyzero-api`) and a public static dashboard (`supplyzero`). Connect this repository in Render and deploy the Blueprint. Visitors can open the dashboard without a Render login; the API is also public and has no user authentication.
+
+The default configuration uses the demo SQLite database. On Render's free web service, the filesystem is ephemeral and the seeded demo data is recreated after restarts or idle spin-downs. The API can take about a minute to wake after 15 minutes without traffic. Do not use this free demo deployment for real shipment or product-quality decisions. Add `GEMINI_API_KEY` to the API service in Render only if enabling the optional Gemini-backed API copilot.
